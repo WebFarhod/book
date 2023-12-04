@@ -1,0 +1,103 @@
+.div-item{
+    width: 100%;
+    overflow-y:auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    // flex: 100%;
+    .item-body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        align-self: stretch;
+        .title{
+
+            color: var(--foundation-grey-grey-900, #151515);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+        }
+        .disc{
+            color: var(--foundation-grey-grey-500, #333);
+            font-family: Mulish;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            margin: 0;
+        }
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+
+        .info{
+            display: flex;
+            flex-direction:row;
+            gap: 5px;
+            
+            p{
+                color: var(--foundation-grey-grey-500, #333);
+                font-family: Mulish;
+                font-size: 14px;
+                font-style: normal;
+                line-height: 15px;
+                padding: 0;
+            }
+            
+            .creator{
+                margin: 0;
+                font-weight: 500;
+            }
+            
+            .date{
+                margin: 0;
+                font-weight: 400;
+            }
+        }
+
+        .page{
+            display: flex;
+            padding: 2px 12px;
+            align-items: center;
+            gap: 6px;
+            border-radius: 8.5px;
+            background: var(--foundation-purple-purple-50, #EFE6FD);
+
+            p{
+                color: var(--foundation-purple-purple-300, #9654F4);
+                text-align: center;
+                font-family: Mulish;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.div-item::-webkit-scrollbar {
+    display: none;
+}
+@media only screen and (max-width: 600px ) {
+    /* For tablets: */
+    .div-item {
+        height: 55vh;
+    }
+  }
+@media only screen and (min-width: 600px ) {
+    /* For tablets: */
+    .div-item {
+        height: 65vh;
+    }
+  }

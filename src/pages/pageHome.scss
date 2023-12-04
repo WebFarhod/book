@@ -1,0 +1,184 @@
+.home{
+    position: absolute;
+    gap: 36px;
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    // background-color: burlywood;
+    // opacity: 0.5;
+    display: inline-flex;
+    padding: 36px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    .navbar{
+        width: 100%;
+        // background-color: aquamarine;
+        display: flex;
+        // width: 70%;
+        padding: 12px 100px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            align-items: center;
+    
+            .logo{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+    
+                p{
+                    color: #6200EE;
+                    font-family: Mulish;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 21.6px */
+                    letter-spacing: 0.576px;
+                    padding: 0;
+                    margin: 0;
+
+                    span{
+                        color: #FFF;                    
+                    }
+                }
+    
+            }
+    
+            .div-search-loader{
+                height: 48px;
+                border-radius: 6px;
+                overflow: hidden;
+                
+                .search{
+                    display: flex;
+                    height: 48px;
+                    align-items: center;
+                    gap: 12px;
+    
+                    display: flex;
+                    height: 46px;
+                    min-width: 380px;
+                    padding: 0px 26px;
+    
+                    
+                    .search-x{
+                        display: none;
+                    }
+                    
+                    .search-input{
+                        display: flex;
+                        width: 100%;
+                        // flex-direction: column;
+                        // justify-content: center;
+                        align-self: stretch; 
+                        border: none;
+                        background-color: transparent;
+                        
+                        color: #FEFEFE;
+                        font-family: Mulish;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.16px;
+                                       
+                    }
+                }
+            }
+        
+            .search-focus{
+                .search{
+                background: #FEFEFE;
+                .search-input{
+                    outline: none;
+                    color: #151515;
+                    background-color: transparent;
+                }
+                .search-x{
+                    display: block;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+            @media only screen and (max-width: 517px) {
+                .search {
+                    min-width: 100px;
+                }
+              }}
+        }
+
+        .right{
+            margin: 0 9px;
+            // margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 24px; 
+            background-color: #F8F8F8;
+            // background-color: #6200EE;
+            padding: 3px 20px;
+            border-radius: 10px;
+            .user{
+                display: flex;
+                padding: 3px;
+                flex-direction: column;
+                align-items: center;
+
+                border-radius: 60px;
+                background: conic-gradient(from 180deg at 50% 50%, #FD648E 0deg, #884CB2 178.1249964237213deg, #FD648E 360deg);
+                backdrop-filter: blur(15px);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        /* For tablets: */
+        .navbar {
+            padding: 0px 5px;
+            .right{
+                margin-left: auto;
+            }
+        }
+      }
+    .body{
+        width: 100%;
+        height:auto;
+        padding: 0px 100px;
+
+        display: inline-flex;
+        // padding: 36px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        box-sizing: border-box;
+        
+
+    }
+    @media only screen and (max-width: 1000px) {
+        /* For tablets: */
+        .body {
+            padding: 0px 5px;
+        }
+    }
+    
+}
+@media only screen and (max-width: 517px) {
+    /* For tablets: */
+        .right{
+            margin-left: auto;
+        }
+    .home {
+        padding: 5px 10px;
+        
+    }
+  }
+

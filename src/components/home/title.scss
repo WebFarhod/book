@@ -1,0 +1,104 @@
+.div-title{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    
+
+    .up{
+        
+        width: 100%;
+        // display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // align-self: stretch;
+        .title{
+            color: var(--foundation-white-white-50, #FEFEFE);
+            font-family: Mulish;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            display: flex;
+            gap: 10px;
+            
+            div{
+                color: var(--foundation-purple-purple-500, #6200EE);
+            }
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .input{
+                background-color: aqua;
+                // display: flex;
+                // height: 47px;
+                padding: 14px 16px;
+                align-items: center;
+                // gap: 16px;
+                align-self: stretch;
+    
+                border-radius: 6px;
+                border: 1px solid var(--foundation-grey-grey-50, #EBEBEB);
+                background: var(--foundation-white-white-50, #FEFEFE);
+    
+    
+                color: var(--foundation-grey-grey-900, #151515);
+                // font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Mulish;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                // opacity: 0.28;
+                // line-height: 120%; /* 19.2px */       
+            }  
+
+            button:nth-child(2){
+                min-width: 45px;
+                height: 45px;
+                // height: 45px;
+                // display: flex;
+                // padding: 10px 24px;
+                // justify-content: center;
+                // align-items: center;
+                // gap: 12px;
+                // border-radius: 4px;
+                background: var(--foundation-purple-purple-500, #6200EE);
+            }
+        }
+          
+            
+        
+    }
+
+    @media only screen and (max-width: 770px) {
+        .up {
+            display: flex;
+            flex-direction: column;
+            gap:16px;
+            align-items: start;
+            .right{
+                margin-left: auto;
+            }
+            
+        }
+      }
+
+    .down{
+        p{
+            color: var(--foundation-white-white-50, #FEFEFE);
+            font-family: Mulish;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
